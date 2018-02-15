@@ -1,4 +1,4 @@
-App is accessible at [myfirstandlastmaven.appspot.com][1]
+App is accessible at [myfirstandlastmaven.appspot.com][0]
 ========================
 
 A skeleton application for Google Cloud Endpoints in Java.
@@ -45,6 +45,7 @@ A skeleton application for Google Cloud Endpoints in Java.
 
    $ mvn appengine:update
 
+[0]: https://myfirstandlastmaven.appspot.com/
 [1]: https://developers.google.com/appengine
 [2]: http://java.com/en/
 [3]: https://developers.google.com/appengine/docs/java/endpoints/
