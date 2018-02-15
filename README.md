@@ -1,6 +1,3 @@
-endpoints-skeleton
-==================
-
 App is accessible at [myfirstandlastmaven.appspot.com][1]
 ========================
 
