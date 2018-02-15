@@ -1,6 +1,8 @@
 endpoints-skeleton
 ==================
 
+The app is accesible via link myfirstandlastmaven.appspot.com 
+
 A skeleton application for Google Cloud Endpoints in Java.
 
 - [App Engine][1]
