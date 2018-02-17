@@ -15,10 +15,9 @@ scopes = {Constants.EMAIL_SCOPE },
 
 public class HelloWorldEndpoints {
 
-   // Declare this method as a method available externally through Endpoints
+    // Declare this method as a method available externally through Endpoints
     @ApiMethod(name = "sayHello", path = "sayHello",
             httpMethod = HttpMethod.GET)
-
     public HelloClass sayHello() {
         return new HelloClass();
     }
@@ -26,8 +25,21 @@ public class HelloWorldEndpoints {
     // Declare this method as a method available externally through Endpoints
     @ApiMethod(name = "sayHelloByName", path = "sayHelloByName",
             httpMethod = HttpMethod.GET)
-
     public HelloClass sayHelloByName (@Named("name") String name) {
         return new HelloClass(name);
+    }
+
+    // Declare this method as a method available externally through Endpoints
+    @ApiMethod(name = "greetByPeriod", path = "greetByPeriod",
+            httpMethod = HttpMethod.GET)
+    public HelloClass greetByPeriod(@Named("name") String name, @Named("period") String period) {
+        return new HelloClass(name, period);
+    }
+
+    // Declare this method as a method available externally through Endpoints
+    @ApiMethod(name = "greetByGender", path = "greetByGender",
+            httpMethod = HttpMethod.GET)
+    public HelloClass greetByGender(@Named("name") String name, @Named("gender") String gender) {
+        return HelloClass.fromGender(name, gender);
     }
 }
